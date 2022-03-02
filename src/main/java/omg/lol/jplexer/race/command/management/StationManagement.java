@@ -25,7 +25,8 @@ public class StationManagement {
         String verb = args.length == 0 ? "help" : args[0];
         switch (verb) {
             case "help":
-                sender.sendMessage("Help will be provided.");
+                sender.sendMessage("For information on adding stations, see the \"RaceCS\" section in the AirCS " +
+                        "Specifications Handbook: https://bit.ly/aircs_spec");
                 break;
             case "add":
                 AddStation(sender, args[1], args[2]);
