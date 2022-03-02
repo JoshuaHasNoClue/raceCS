@@ -61,7 +61,8 @@ public class RegionManagement {
         String verb = args.length == 0 ? "help" : args[0];
         switch (verb) {
             case "help":
-                sender.sendMessage("Help will be provided.");
+                sender.sendMessage("For information on defining station regions, " +
+                        "see the \"RaceCS\" section on the AirCS Specifications Handbook: https://bit.ly/aircs_spec");
                 break;
             case "add":
                 AddRegion(sender, args[1]);
